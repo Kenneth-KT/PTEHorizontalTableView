@@ -35,8 +35,14 @@
 
 - (NSUInteger)numberOfSectionsInTableView:(PTEHorizontalTableView*)horizontalTableView;
 
+- (NSIndexPath *)tableView:(PTEHorizontalTableView *)horizontalTableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+
 - (void)tableView:(PTEHorizontalTableView *)horizontalTableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (NSIndexPath *)tableView:(PTEHorizontalTableView *)horizontalTableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)tableView:(PTEHorizontalTableView *)horizontalTableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 - (UIView*)tableView:(PTEHorizontalTableView*)horizontalTableView
 viewForHeaderInSection:(NSInteger)section;
@@ -46,6 +52,12 @@ viewForFooterInSection:(NSInteger)section;
 
 - (CGFloat)tableView:(PTEHorizontalTableView *)horizontalTableView
 widthForCellAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section;
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section;
 
 @end
 
