@@ -37,21 +37,17 @@
 
 - (NSIndexPath *)tableView:(PTEHorizontalTableView *)horizontalTableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
-- (void)tableView:(PTEHorizontalTableView *)horizontalTableView
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(PTEHorizontalTableView *)horizontalTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 - (NSIndexPath *)tableView:(PTEHorizontalTableView *)horizontalTableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 - (void)tableView:(PTEHorizontalTableView *)horizontalTableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
 
-- (UIView*)tableView:(PTEHorizontalTableView*)horizontalTableView
-viewForHeaderInSection:(NSInteger)section;
+- (UIView*)tableView:(PTEHorizontalTableView*)horizontalTableView viewForHeaderInSection:(NSInteger)section;
 
-- (UIView*)tableView:(PTEHorizontalTableView*)horizontalTableView
-viewForFooterInSection:(NSInteger)section;
+- (UIView*)tableView:(PTEHorizontalTableView*)horizontalTableView viewForFooterInSection:(NSInteger)section;
 
-- (CGFloat)tableView:(PTEHorizontalTableView *)horizontalTableView
-widthForCellAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)tableView:(PTEHorizontalTableView *)horizontalTableView widthForCellAtIndexPath:(NSIndexPath *)indexPath;
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 

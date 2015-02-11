@@ -161,7 +161,7 @@
 {
     if ([self.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)])
     {
-        return nil;
+        return [self.delegate tableView:self willSelectRowAtIndexPath:indexPath];
     }
     return indexPath;
 }
