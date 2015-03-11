@@ -66,6 +66,12 @@
     self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0.0, 0.0, 0.0, self.bounds.size.height - 7.0);
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self refreshOrientation];
+}
+
 - (CGPoint)contentOffset
 {
     CGPoint offset = self.tableView.contentOffset;
