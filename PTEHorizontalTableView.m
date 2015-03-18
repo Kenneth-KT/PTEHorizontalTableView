@@ -69,7 +69,9 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    [self refreshOrientation];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [self refreshOrientation];
+    }
 }
 
 - (CGPoint)contentOffset
